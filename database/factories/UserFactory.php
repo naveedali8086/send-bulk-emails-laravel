@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -21,6 +22,17 @@ class UserFactory extends Factory
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
         ];
+    }
+
+    public function configure()
+    {
+        return $this->afterCreating(function (User $user) {
+
+            // explicitly assigning 'api_token' as it must not be present in model's $fillable property
+            $user->api_token = Str::random(80);
+            $user->save();
+
+        });
     }
 
     /**

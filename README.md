@@ -1,6 +1,6 @@
 ## Sample app to send multiple emails asynchronously over API in Laravel
 
-###Overview:
+###Overview
 
 - Build a simple API that accepts an array of emails, each of them
   having subject, body, attachments (could be many or none) and the email

@@ -38,7 +38,7 @@ class EmailTest extends TestCase
             ->assertStatus(201)
             ->assertJson(['message' => 'Emails saved']);
 
-        Bus::assertDispatched(SendEmailJob::class);
+        Bus::assertDispatched(SendEmailJob::class, 10);
     }
 
     /**

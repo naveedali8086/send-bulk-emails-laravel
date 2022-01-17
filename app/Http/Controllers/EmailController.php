@@ -37,7 +37,7 @@ class EmailController extends Controller
         }
 
         // as per the convention, when a resource is created 201 is returned
-        return response()->json(['message' => 'Emails saved'], 201);
+        return response()->json(['message' => 'Emails saved', 'id'], 201);
 
     }
 

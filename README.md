@@ -29,11 +29,12 @@ and the token is used as a URI parameter in the request api_token={{your_api_tok
 5. In phpunit tests 'mysql' database has been used
 
 
-5. Because horizon has been used so following commands needs to be run because horizon related assets and service provider has not been committed
-   php artisan horizon:install
+6. Because horizon has been used so following commands needs to be run because horizon related assets and service provider has not been committed
+   
+     php artisan horizon:install
 
 
-8. Following queue related migrations need to be run:
+7. Following queue related migrations need to be run:
     
 - php artisan queue:table
 
@@ -41,5 +42,5 @@ and the token is used as a URI parameter in the request api_token={{your_api_tok
 
 - php artisan horizon
 
-9. One command 'test' has been added in composer.json to run the test cases 
+8. One command 'test' has been added in composer.json to run the test cases 
 i.e. composer test 

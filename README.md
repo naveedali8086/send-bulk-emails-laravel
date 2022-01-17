@@ -15,7 +15,7 @@
 1. "composer install" need to be run
 
 
-2. .evn file needs to be added and updated with DB and MAIL related environment variables
+2. .env file needs to be added and updated with DB and MAIL related environment variables
 
 
 3. 'predis' client was used in this demo instead of default 'phpredis'. 

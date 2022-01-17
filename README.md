@@ -12,7 +12,7 @@
 
 
 ### Points to be noted before running this sample
-1. "composer install" need to be run to
+1. "composer install" need to be run
 
 
 2. .evn file needs to be added and updated with DB and MAIL related environment variables
